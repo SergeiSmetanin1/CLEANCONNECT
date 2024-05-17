@@ -74,7 +74,8 @@ body {
     margin-left: 30px;
 }
 
-.sidebar-clean img, .sidebar-connect img {
+.sidebar-clean img,
+.sidebar-connect img {
     height: 100%;
 }
 
@@ -375,7 +376,7 @@ body {
     content: '';
     position: absolute;
     top: 100%;
-    right: 0px; 
+    right: 0px;
     width: 20px;
     height: 20px;
     background-color: #2338A2;
@@ -387,7 +388,7 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 24.2px;
-    color: #181F34; 
+    color: #181F34;
 }
 
 .img-email {
@@ -448,16 +449,21 @@ body {
     text-align: center;
 }
 
+.form-tel input:focus {
+    outline: none;
+}
+
 .form-tel button {
     width: 213px;
     height: 68px;
     border-radius: 30px;
     background-color: #2338A2;
+    border: none;
     color: #FAF5F5;
     font-family: Inter;
     font-size: 20px;
     font-weight: 700;
-    line-height: 24.2px; 
+    line-height: 24.2px;
     cursor: pointer;
 }
 
@@ -490,9 +496,483 @@ body {
     color: #2338A2;
 }
 
-.application span{
+.application span {
     font-family: Manrope;
     font-size: 24px;
     font-weight: 400;
-    line-height: 32.78px;    
+    line-height: 32.78px;
+}
+
+.specialists h2 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
+    text-transform: uppercase;
+}
+
+.specialists {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: fit-content;
+}
+
+.search-specialists {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+}
+
+.search-specialists input {
+    width: 971px;
+    height: 78px;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #181F34;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24.2px;
+    text-align: center;
+}
+
+.search-specialists input:focus {
+    outline: none;
+}
+
+.search-specialists button {
+    height: 100%;
+    border-radius: 0 30px 30px 0;
+    height: 78px;
+    background-color: #2338A2;
+    border: 1px solid #181F34;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.search-specialists button:active {
+    background-color: #2338A2B2;
+}
+
+.search-specialists img {
+    width: 33px;
+}
+
+.cards-specialists {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 80px 120px;
+}
+
+.cards-specialists h3 {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    color: #FFFFFF;
+}
+
+.card-specialists {
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #181F34;
+}
+
+.card-specialists img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-card-specialists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #4FC0E4;
+}
+
+.name-card-specialists img {
+    width: 30px;
+}
+
+.name-card-specialists-blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #4FC0E4;
+}
+
+.name-card-specialists-blue img {
+    width: 30px;
+}
+
+.name-card-specialists-green {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #50D45D;
+}
+
+.name-card-specialists-purple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #8A50D4;
+}
+
+.name-card-specialists-yellow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #E4CC4F;
+}
+
+.name-card-specialists-orange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #E46A4F;
+}
+
+.name-card-specialists-azure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #4FE4B7;
+}
+
+.name-card-specialists-green img {
+    width: 24px;
+    height: 35px;
+}
+
+.name-card-specialists-purple img {
+    width: 19px;
+    height: 35px;
+}
+
+.name-card-specialists-yellow img {
+    width: 34px;
+    height: 35px;
+}
+
+.name-card-specialists-orange img {
+    width: 35px;
+    height: 35px;
+}
+
+.name-card-specialists-azure img {
+    width: 24px;
+    height: 35px;
+}
+
+.description-card-specialists {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.description-card-specialists span {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+}
+
+.description-card-specialists a {
+    color: #181F34;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.86px;
+    text-align: left;
+    text-decoration: none;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.completed-applications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.completed-applications h3 {
+    font-family: Manrope;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 87.42px;
+    color: #2338A2;
+}
+
+.completed-applications span {
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.78px;
+}
+
+.client-ditails-section {
+    width: fit-content;
+}
+
+.client-ditails-section h2 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
+    color: #181F34;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/* исправить на user-info-client-ditails */
+/* .client-ditails-section span {
+} */
+
+.user-info-client-ditails {
+    display: flex;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #181F34;
+}
+
+.inform-card {
+    display: flex;
+    background-color: #4FC0E480;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #181F34;
+}
+
+.inform-card ol {
+    list-style-type: none;
+    counter-reset: num;
+    margin: 0 0 0 60px;
+    padding: 15px 0 5px 0;
+    font-size: 16px;
+}
+
+.inform-card ol li {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.78px;
+    text-decoration: underline;
+    text-decoration: 100px;
+}
+
+.inform-card ol li:before {
+    content: counter(num);
+    counter-increment: num;
+    font-family: Manrope;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    /* width: 50px;     */
+    color: #181F34;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* .marker-inform-card {
+} */
+
+
+/* -------------------------------------------------------------- */
+
+
+.application-section {
+    width: fit-content;
+}
+
+.application-section h2 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
+    color: #181F34;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.card-application {
+    height: 444px;
+    width: 1211px;
+    border: 1px solid #181F34;
+    
+    border-radius: 30px;
+    position: relative;
+    padding: 0 0 0 100px;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.name-application {
+    border-radius: 30px 30px 0 0;
+    width: 441px;
+    height: 83px;
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.64px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -179px;
+    top: 179px;
+}
+
+.list-application {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    height: 90%;
+}
+
+.list-application h4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #00000080;
+}
+
+.list-application h4:not(:first-child) {
+    margin-top: 10px;
+}
+
+.list-application span {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    color: #181F34;
+}
+
+
+.list-application span:nth-of-type(4) {
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.price-application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 30px 30px 0 30px;
+    border: 1px solid #181F34;
+    border-top: none;
+    border-right: none;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+.price-application h4 {
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.78px;
+    color: #00000080;
+}
+
+.price-application span {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.71px;
+    color: #181F34;
+}
+
+.container-applications {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-bottom: 50px;
+}
+
+.window-cleaning {
+    background-color: #8A50D433;
+}
+
+.window-cleaning .name-application {
+    background-color: #8A50D4;
+}
+
+.dry-cleaning {
+    background-color: #4FC0E433;
+}
+
+.dry-cleaning .name-application {
+    background-color: #4FC0E4;
+}
+
+.room-cleaning {
+    background-color: #50D45D33;
+}
+
+.room-cleaning .name-application {
+    background-color: #50d45d;
+}
+
+.spring-cleaning {
+    background-color: #E4CC4F33;
+}
+
+.spring-cleaning .name-application {
+    background-color: #e4cb4f;
+}
+
+.cleaning-renovation {
+    background-color: #D4705033;
+}
+
+.cleaning-renovation .name-application {
+    background-color: #d47150;
+}
+
+.daily {
+    background-color: #4fe4b731;
+}
+
+.daily .name-application {
+    background-color: #4fe4b7;
+}
+
+.edit-application {
+    position: absolute;
+    right: 30px;
+    bottom: -50px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #00000080;
+    text-decoration: none;
+    border-bottom: 1px solid #00000080;
 }
