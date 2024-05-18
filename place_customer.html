@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="logo-header">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="customer_profile.html">Профиль</a></li>
+                    <li><a href="сustomer_specialists.html">Специалисты</a></li>
+                    <li><a href="applications.html">Мои заявки</a></li>
+                    <li><a href="#">Разместить заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main class="main">
+            <section class="place-customer-section">
+                <h2>Разместить заявку</h2>
+                <p>Ответьте на пару вопросов, что бы специалистам и вам было проще ориентироваться!</p>
+                <div class="container-place">
+                    <ol>
+                        <li>
+                            <h4>Какая уборка потребуется?</h4>
+                            <div>
+                                <input type="radio" id="radio1" name="cleaning_type" value="1">
+                                <label class="radio-btn" for="radio1"><span>Химчистка</span></label>
+                    
+                                <input type="radio" id="radio2" name="cleaning_type" value="2">
+                                <label class="radio-btn" for="radio2"><span>Мойка окон</span></label>
+                    
+                                <input type="radio" id="radio3" name="cleaning_type" value="3">
+                                <label class="radio-btn" for="radio3"><span>Уборка</span></label>
+                    
+                                <input type="radio" id="radio4" name="cleaning_type" value="4">
+                                <label class="radio-btn" for="radio4"><span>Генеральная уборка</span></label>
+                    
+                                <input type="radio" id="radio5" name="cleaning_type" value="5">
+                                <label class="radio-btn" for="radio5"><span>Другое</span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Где провести уборку?</h4>
+                            <div>
+                                <input type="radio" id="location1" name="location" value="1">
+                                <label class="radio-btn" for="location1"><span>Квартира</span></label>
+                    
+                                <input type="radio" id="location2" name="location" value="2">
+                                <label class="radio-btn" for="location2"><span>Частный дом</span></label>
+                    
+                                <input type="radio" id="location3" name="location" value="3">
+                                <label class="radio-btn" for="location3"><span>Офис</span></label>
+                    
+                                <input type="radio" id="location4" name="location" value="4">
+                                <label class="radio-btn" for="location4"><span>Торговый центр</span></label>
+                    
+                                <input type="radio" id="location5" name="location" value="5">
+                                <label class="radio-btn" for="location5"><span>Другое</span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>У вас есть моющие средства и инвентарь?</h4>
+                            <div>
+                                <input type="radio" id="supplies1" name="supplies" value="1">
+                                <label class="radio-btn" for="supplies1"><span>Да</span></label>
+                    
+                                <input type="radio" id="supplies2" name="supplies" value="2">
+                                <label class="radio-btn" for="supplies2"><span>Нет</span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Укажите свою цену</h4>
+                            <input class="input-price" type="number" name="price" placeholder="— — — — —">
+                        </li>
+                        <li>
+                            <h4>Дополнительный комментарий к заказу</h4>
+                            <textarea name="comments" id="comments" class="styled-textarea"></textarea>
+                        </li>
+                    </ol>                    
+                </div>
+                <button class="btn-place">Опубликовать</button>
+                           
+            </section>
+        </main>
+    </div>
+    <aside class="sidebar-connect">
+        <img src="images/connect.png" alt="#">
+    </aside>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <a href="#">Помощь</a>
+            <a href="#">Выйти</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
