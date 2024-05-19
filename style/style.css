@@ -13,6 +13,10 @@ body {
     padding-bottom: 130px;
 }
 
+.body-auth {
+    padding-bottom: 0;
+}
+
 .wrapper {
     width: 70%;
     margin: auto;
@@ -348,6 +352,8 @@ body {
 
 .profile-section {
     width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-section h2 {
@@ -443,7 +449,7 @@ body {
     font-weight: 300;
     line-height: 24.2px;
     width: 504px;
-    height: 78px;
+    height: 60px;
     border-radius: 30px;
     border: 1px solid #181F34;
     text-align: center;
@@ -455,7 +461,7 @@ body {
 
 .form-tel button {
     width: 213px;
-    height: 68px;
+    height: 60px;
     border-radius: 30px;
     background-color: #2338A2;
     border: none;
@@ -490,7 +496,7 @@ body {
 
 .application h3 {
     font-family: Manrope;
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 87.42px;
     color: #2338A2;
@@ -498,7 +504,7 @@ body {
 
 .application span {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.78px;
 }
@@ -507,14 +513,14 @@ body {
     font-family: Manrope;
     font-size: 32px;
     font-weight: 600;
-    line-height: 43.71px;
+    line-height: 25px;
     text-transform: uppercase;
 }
 
 .specialists {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
     width: fit-content;
 }
 
@@ -526,8 +532,8 @@ body {
 }
 
 .search-specialists input {
-    width: 971px;
-    height: 78px;
+    width: 820px;
+    padding: 15px;
     border-radius: 30px 0 0 30px;
     border: 1px solid #181F34;
     font-family: Inter;
@@ -542,12 +548,10 @@ body {
 }
 
 .search-specialists button {
-    height: 100%;
     border-radius: 0 30px 30px 0;
-    height: 78px;
     background-color: #2338A2;
     border: 1px solid #181F34;
-    padding: 20px;
+    padding: 13px;
     cursor: pointer;
 }
 
@@ -700,6 +704,10 @@ body {
     margin-top: 15px;
 }
 
+.description-card-specialists a:hover {
+    text-decoration: underline;
+}
+
 .completed-applications {
     display: flex;
     flex-direction: column;
@@ -708,15 +716,15 @@ body {
 
 .completed-applications h3 {
     font-family: Manrope;
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 800;
-    line-height: 87.42px;
+    line-height: 50px;
     color: #2338A2;
 }
 
 .completed-applications span {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.78px;
 }
@@ -741,19 +749,22 @@ body {
 
 .user-info-client-ditails {
     display: flex;
+    align-items: center;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.2px;
     color: #181F34;
+    justify-content: space-between;
 }
 
 .inform-card {
-    display: flex;
     background-color: #4FC0E480;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px 45px 30px 20px;
     border: 1px solid #181F34;
+    position: relative;
+    margin-top: 55px;
 }
 
 .inform-card ol {
@@ -762,6 +773,9 @@ body {
     margin: 0 0 0 60px;
     padding: 15px 0 5px 0;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .inform-card ol li {
@@ -772,8 +786,15 @@ body {
     font-size: 24px;
     font-weight: 500;
     line-height: 32.78px;
-    text-decoration: underline;
-    text-decoration: 100px;
+    /* text-decoration: underline; */
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.inform-card span {
+    display: inline-block;
 }
 
 .inform-card ol li:before {
@@ -793,6 +814,17 @@ body {
 
 /* .marker-inform-card {
 } */
+.img-inform-card {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    /* height: 150px; */
+}
+
+.img-inform-card img {
+    width: 100%;
+}
 
 
 /* -------------------------------------------------------------- */
@@ -809,12 +841,20 @@ body {
     line-height: 43.71px;
     color: #181F34;
     text-transform: uppercase;
-    margin-bottom: 50px;
+
+}
+
+.application-section p {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38.73px;
+    color: #00000080;
 }
 
 .card-application {
-    height: 444px;
-    width: 1211px;
+    height: 400px;
+    width: 1100px;
     border: 1px solid #181F34;
 
     border-radius: 30px;
@@ -827,20 +867,21 @@ body {
 
 .name-application {
     border-radius: 30px 30px 0 0;
-    width: 441px;
+    width: 400px;
     height: 83px;
     font-family: Manrope;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 54.64px;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
     position: absolute;
-    left: -179px;
-    top: 179px;
+    left: 42px;
+    top: 199px;
+    z-index: -1;
 }
 
 .list-application {
@@ -865,7 +906,7 @@ body {
 
 .list-application span {
     font-family: Inter;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 29.05px;
     color: #181F34;
@@ -895,7 +936,7 @@ body {
 
 .price-application h4 {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 32.78px;
     color: #00000080;
@@ -903,7 +944,7 @@ body {
 
 .price-application span {
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 43.71px;
     color: #181F34;
@@ -912,8 +953,9 @@ body {
 .container-applications {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     padding-bottom: 50px;
+    margin-top: 15px;
 }
 
 .window-cleaning {
@@ -967,13 +1009,16 @@ body {
 .edit-application {
     position: absolute;
     right: 30px;
-    bottom: -50px;
+    bottom: -40px;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 24.2px;
     color: #00000080;
     text-decoration: none;
+}
+
+.edit-application:hover {
     border-bottom: 1px solid #00000080;
 }
 
@@ -997,7 +1042,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24.2px;
-    color: #181F34;   
+    color: #181F34;
     /* margin-left: 50px; */
 }
 
@@ -1075,7 +1120,7 @@ input[type="radio"] {
     height: 20px;
     border: 2px solid #333;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: transparent;
     box-sizing: border-box;
 }
 
@@ -1083,7 +1128,7 @@ input[type="radio"] {
     content: '';
     position: absolute;
     left: 12px;
-    top: -1px;
+    top: 3px;
     width: 7px;
     height: 15px;
     border: solid #333;
@@ -1109,7 +1154,7 @@ input[type="radio"]:checked+.radio-btn:before {
     border-radius: 30px;
     text-align: center;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 43.71px;
 }
@@ -1130,12 +1175,13 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 15px;
     border: 1px solid #181F34;
     border-radius: 10px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
     resize: vertical;
     color: #333;
-
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27.32px;
 }
 
 .styled-textarea:focus {
@@ -1178,5 +1224,402 @@ input[type="number"]::-webkit-outer-spin-button {
 .btn-place:active {
     background-color: #2338A2;
     color: white;
-    
+
+}
+
+.underline span {
+    display: inline-block;
+    border-bottom: 3px solid #FFFFFF80;
+    width: 100%;
+    word-break: break-all;
+}
+
+.underline {
+    word-break: break-word;
+}
+
+.dit-btn {
+    padding: 12px 20px;
+    border: 1px solid #2338A2;
+    border-radius: 30px;
+    color: #2338A2;
+    background-color: white;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.2px;
+}
+
+.dit-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.dit-btn:active {
+    background-color: #2338A2;
+    color: white;
+}
+
+.header-executor {
+    background-color: #446C91CC;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 4px 12px 0px #070948C2;
+}
+
+.ex-btn {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 50%);
+    bottom: -38px;
+}
+
+.delete-btn {
+    color: #A91B1B;
+    border: 1px solid #770000;
+    padding: 12px 50px;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.2px;
+}
+
+.delete-btn:active {
+    background-color: #770000;
+    color: white;
+}
+
+.btns-offset {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: -60px;
+    right: 10px;
+}
+
+.status-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-info-executer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-ex-prof {
+    background-color: #4FC0E433;
+    background-color: white;
+}
+
+.card-ex-prof p {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.32px;
+    color: #00000080;
+    margin-left: 20px;
+}
+
+.status-container  h3 {
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.78px;
+    color: #181F34;
+}
+
+.status-container span {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.32px;
+    color: #181F34;
+}
+
+.status {
+    border-radius: 30px;
+    border: 1px solid #2338A2;
+    color: #2338A2 !important;
+    padding: 5px 30px;
+    font-family: Inter !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    line-height: 18.15px !important;
+    margin-left: 10px;
+}
+
+.status-applications {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    text-align: center;
+}
+
+.card-ex-prof input {
+    border-width: 0px 0px 2px 0;
+    border-color: #181F34;
+    background-color: transparent;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27.32px;
+    outline: none;
+    width: 350px;
+}
+
+.about-me-card {
+    width: 100% !important;
+    outline: none;
+}
+
+.btn-ex {
+    border-radius: 30px;
+    background-color: #2338A2;
+    border: 1px solid #2338A2;
+    color: #FAF5F5;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    cursor: pointer;
+    padding: 15px 50px;
+    margin-top: 25px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.btn-ex:active {
+    background-color: #2338A2B2;
+}
+
+
+/* ------------------------------------------ */
+
+.container-auth {
+    width: 500px;
+    height: 500px;
+    background-color: #181F34B2;
+    border-radius: 30px;
+}
+
+.register-page {
+    background-image: url('../images/bg-registr.png');
+    /* background-color: #0056b3; */
+    /* Путь к изображению */
+    background-size: cover;
+    /* Изображение покроет всю страницу */
+    background-position: center;
+    /* Центрируем изображение */
+    background-repeat: no-repeat;
+    /* Изображение не повторяется */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Высота на всю страницу */
+    width: 100%;
+    /* Ширина на всю страницу */
+}
+
+/* Стили для контейнера регистрации */
+.auth-container {
+    background-color: #181F34B2;
+    /* Прозрачный белый фон */
+    padding: 100px 20px;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 55px 0px #D7F6FF4D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.auth-container h1 {
+    margin-bottom: 20px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin-bottom: 5px;
+}
+
+.auth-container input {
+    width: 70%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: #181F345C;
+    box-shadow: 0px 4px 24px 0px #D7F6FF45;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.auth-container p {
+    margin-top: 10px;
+}
+
+.auth-btn {
+    border-radius: 20px;
+    padding: 7px 60px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 27.32px;
+    cursor: pointer;
+}
+
+.auth-btn:active {
+    border: 1px solid #00C3FF;
+    box-shadow: 0px 4px 31px 0px #FFFFFF24;
+    color: #00C3FF;
+}
+
+.auth-btn2 {
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 70%;
+    color: #B0DEEC;
+    background-color: #181F34E5;
+    border: 1px solid #FFFFFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 27.32px;
+    cursor: pointer;
+}
+
+.auth-btn2:active {
+    border: 1px solid #00C3FF;
+    box-shadow: 0px 4px 31px 0px #FFFFFF24;
+    color: #00C3FF;
+}
+
+.сancel-btn {
+    margin-top: 10px;
+}
+
+.auth-btn3 {
+    border-radius: 20px;
+    padding: 10px 60px;
+    color: #181F34;
+    background-color: #B0DEEC;
+    border: 1px solid #FFFFFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 27.32px;
+    cursor: pointer;
+}
+
+.auth-btn3:active {
+    background-color: #9CC3D9; /* Более темный оттенок синего для активного состояния */
+}
+
+.inp-mail {
+    display: flex;
+    text-align: center;
+}
+
+.auth-select {
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-auth-top {
+    background-color: #D7F6FF;
+    border: none;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    color: #181F34;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 54.64px;
+    text-transform: uppercase;
+    cursor: pointer;    
+}
+
+.btn-auth-top:active {
+    background-color: #B0E0ED; /* Темный оттенок синего для активного состояния */
+}
+
+.btn-auth-bot {
+    background-color: #181F34;
+    border: none;
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+    color: #D7F6FF;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 54.64px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-auth-bot:active {
+    background-color: #121824; /* Темный оттенок для активного состояния */
+}
+
+
+.dry-cleaning {
+    background-color: #4FC0E433;
+}
+
+.window-cleaning {
+    background-color: #8A50D433;
+}
+
+.daily-cleaning {
+    background-color: #50D45D33;
+}
+
+.deep-cleaning {
+    background-color: #E4CC4F33;
+}
+
+.post-renovation-cleaning {
+    background-color: #D4705033;
+}
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
 }
